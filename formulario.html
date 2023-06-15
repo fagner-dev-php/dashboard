@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Admin Panel</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="topbar">
+        <div class="logo">
+          <h2>Brand.</h2>
+        </div>
+        <div class="search">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Busque aqui..."
+          />
+          <label for="search"><i class="fas fa-search"></i></label>
+        </div>
+        <i class="fas fa-bell"></i>
+        <div class="user">
+          <img src="img/user.png" alt="Usuário" />
+        </div>
+      </div>
+      <div class="sidebar">
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fas fa-th-large"></i>
+              <div>Dashboard</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-user-graduate"></i>
+              <div>Students</div>
+            </a>
+          </li>
+          <li class="active">
+            <a href="#">
+              <i class="fas fa-chalkboard-teacher"></i>
+              <div>Teachers</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-users"></i>
+              <div>Employees</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-chart-bar"></i>
+              <div>Analytics</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-hand-holding-usd"></i>
+              <div>Earnings</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-cog"></i>
+              <div>Settings</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-question"></i>
+              <div>Help</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main">
+        <!-- Inicio do conteudo do administrativo -->
+
+        <div class="top-list">
+          <h1>Listar Usuários</h1>
+          <button class="button"><i class="fa fa-plus"></i> Listar</button>
+        </div>
+
+        <div class="content-adm">
+          <form class="form-adm">
+            <div class="row-input">
+              <div class="column">
+                <label class="title-input">Nome</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="input-adm"
+                  placeholder="Nome completo"
+                />
+              </div>
+              <div class="column">
+                <label class="title-input">E-mail</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="input-adm"
+                  placeholder="Melhor e-mail"
+                />
+              </div>
+            </div>
+
+            <div class="row-input">
+              <div class="column">
+                <label class="title-input">Campo 3</label>
+                <input
+                  type="text"
+                  name="campo_3"
+                  id="campo_3"
+                  class="input-adm"
+                  placeholder="Campo 3"
+                />
+              </div>
+              <div class="column">
+                <label class="title-input">Campo 4</label>
+                <input
+                  type="text"
+                  name="campo_4"
+                  id="campo_4"
+                  class="input-adm"
+                  placeholder="Campo 4"
+                />
+              </div>
+            </div>
+
+            <div class="row-input">
+              <div class="column">
+                <label class="title-input">Campo 5</label>
+                <input
+                  type="text"
+                  name="campo_5"
+                  id="campo_5"
+                  class="input-adm"
+                  placeholder="Campo 5"
+                />
+              </div>
+            </div>
+
+            <div class="row-input">
+              <div class="column">
+                <label class="title-input">Campo 6</label>
+                <select name="campo_6" id="campo_6" class="input-adm">
+                  <option>Selecione</option>
+                  <option>Opção 1</option>
+                  <option>Opção 2</option>
+                  <option>Opção 3</option>
+                </select>
+              </div>
+              <div class="column">
+                <label class="title-input">Campo 7</label>
+                <select name="campo_7" id="campo_7" class="input-adm">
+                  <option>Selecione</option>
+                  <option>Opção 1</option>
+                  <option>Opção 2</option>
+                  <option>Opção 3</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row-input">
+              <div class="column">
+                <label class="title-input">Descrição</label>
+                <textarea
+                  name="descricao"
+                  id="descricao"
+                  class="input-adm"
+                  placeholder="Descrição"
+                ></textarea>
+              </div>
+            </div>
+            <button type="button" class="button-form">Cadastrar</button>
+          </form>
+        </div>
+
+        <!-- Fim do conteudo do administrativo -->
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="chart1.js"></script>
+    <script src="chart2.js"></script>
+  </body>
+</html>
